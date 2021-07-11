@@ -13,6 +13,7 @@ import SportsSoccerSharpIcon from '@material-ui/icons/SportsSoccerSharp';
 import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save';
 import { AppBar, Toolbar, CssBaseline } from '@material-ui/core';
+import LinearProgress from '@material-ui/core/LinearProgress';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function CenteredGrid() {
   const classes = useStyles();
-  const myName = "Thulani Nhlapo"
+  const myName = "Thulani Nhlapo "
   const myDesc = "IT Graduate"
   const myPhone = "0724389800"
   const myHome = "6205 Section RD5 Gazama Street Mamelodi"
@@ -45,16 +46,16 @@ export default function CenteredGrid() {
       <>
       <CssBaseline />
       <AppBar position="relative">
-        </AppBar>
-        <Toolbar>
-
-          </Toolbar>
+      <Toolbar>
+      <Typography variant="h5" >{myName}</Typography>
+      </Toolbar>
+      </AppBar>
         </>
       <Grid container spacing={}>
         <Grid item xs={12} >
           <Paper className={classes.paper} elevation="0">
-            <Typography variant="h5" color="primary">{myName}</Typography>
-            <Typography variant="h6" color="secondary">{myDesc}</Typography>
+            
+      <Typography variant="h5" color="primary">{myDesc}</Typography>
           </Paper>
         </Grid>
       
