@@ -36,7 +36,7 @@ export default function CenteredGrid() {
     <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Paper className={classes.paper}>
+          <Paper className={classes.paper} elevation="0">
             <Typography variant="h4">{myName}</Typography>
             <Typography variant="h5">{myDesc}</Typography>
           </Paper>
