@@ -59,6 +59,18 @@ export default function CenteredGrid() {
             <Typography variant="h7" align="" paragraph>
             believe and hope that my field of study in Information Technology will make me an asset to your organization and I would appreciate your careful consideration of my credentials as presented in this CV. I believe I am the right candidate for this opportunity as I have the skill set to meet the company’s objectives in terms of the development of back-end and front-end of Web-based, Desktop and Android Applications in PHP (Web-based), Visual Basic.NET (Desktop), HTML, CSS, JAVA (Android) programing languages, and the set of databases to communicate with application using database software like Oracle Relational Database Management System, Microsoft Access, and MySQL. By joining the academy, I will be able to learn new skills in the world of technology and get work-related experience. 
             </Typography>
+            <Typography variant="h6">Education</Typography>
+            <Typography variant="h7" align="">2021: Diploma in Information Technology </Typography>
+            <Typography variant="h7" align="">2008: Grade 12 </Typography>
+
+            <Typography variant="h6">Work experience</Typography>
+            <Typography variant="h7" align="">01 August 2018 – 31 August 2019 Company : Expanded Public Works Programme
+            Position Held : General Worker
+            Duties : Cleaning & Culinary work</Typography>
+            <Typography variant="h7" align="">05 April 2016 – 10 November 2016 Company : South African Statistics
+            Position Held : Field Worker
+            Duties : Community Surveying</Typography>
+            
           </Paper>
         </Grid>
         <Grid item xs={12}>
