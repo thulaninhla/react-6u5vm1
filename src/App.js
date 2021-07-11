@@ -6,6 +6,10 @@ import Typography from '@material-ui/core/Typography';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import HomeIcon from '@material-ui/icons/Home';
+import MusicNoteSharpIcon from '@material-ui/icons/MusicNoteSharp';
+import BookSharpIcon from '@material-ui/icons/BookSharp';
+import MovieSharpIcon from '@material-ui/icons/MovieSharp';
+import SportsSoccerSharpIcon from '@material-ui/icons/SportsSoccerSharp';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,6 +55,24 @@ export default function CenteredGrid() {
             <Typography variant="h7"><HomeIcon></HomeIcon>
             </Typography>
             <Typography>{myHome}</Typography>
+
+            <Typography variant="h6">Skill</Typography>
+            <Typography>Html & CSS</Typography>
+            <Typography>PHP</Typography>
+            <Typography>MySQL</Typography>
+            <Typography>Visual Basic</Typography>
+
+            <Typography variant="h6">languages</Typography>
+            <Typography>English</Typography>
+            <Typography>IsiZulu</Typography>
+            <Typography>Afrikaans</Typography>
+            <Typography>Setswana</Typography>
+            <Typography>N. Sotho</Typography>
+
+            <Typography variant="h6">Hobbies</Typography>
+            <MusicNoteSharpIcon></MusicNoteSharpIcon>
+            <BookSharpIcon></BookSharpIcon><MovieSharpIcon></MovieSharpIcon><SportsSoccerSharpIcon></SportsSoccerSharpIcon>
+
           </Paper>
         </Grid>
         <Grid item xs={6}>
@@ -70,7 +92,7 @@ export default function CenteredGrid() {
             <Typography variant="h7" align="">05 April 2016 – 10 November 2016 Company : South African Statistics
             Position Held : Field Worker
             Duties : Community Surveying</Typography>
-            
+
           </Paper>
         </Grid>
         <Grid item xs={12}>
