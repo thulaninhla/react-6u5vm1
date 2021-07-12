@@ -14,12 +14,15 @@ import SportsSoccerSharpIcon from '@material-ui/icons/SportsSoccerSharp';
 import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save';
 import { AppBar, Toolbar, CssBaseline } from '@material-ui/core';
-import LinearProgress from '@material-ui/core/LinearProgress';
-import Box from '@material-ui/core/Box';
+import ButtonBase from '@material-ui/core/ButtonBase';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+  },
+
+  media: {
+    height: 140,
   },
   paper: {
     padding: theme.spacing(1),
@@ -27,8 +30,17 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.primary,
   container: {
     backgroundColor: theme.palette.backgroundColor
-  }  
-    
+  }, 
+  image: {
+    width: 128,
+    height: 128,
+  },
+  img: {
+    margin: 'auto',
+    display: 'block',
+    maxWidth: '100%',
+    maxHeight: '100%',
+  }
   },
 }));
 
@@ -48,7 +60,10 @@ export default function CenteredGrid() {
       <CssBaseline />
       <AppBar position="relative">
       <Toolbar>
-      <Typography variant="h5" >{myName}</Typography>
+      <ButtonBase className={classes.image}>
+              <img className={classes.img} alt="complex" src="https://photos.google.com/search/_tra_/photo/AF1QipNAq5ocfXDxhLIpHEIONIfKGtI7R5FntCtzQmLe"/>
+            </ButtonBase>
+      <Typography variant="h5">{myName}</Typography>
       </Toolbar>
       </AppBar>
         </>
@@ -126,5 +141,5 @@ export default function CenteredGrid() {
       </Grid>
     </div>
   );
-   
-}
+} 
+
