@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -14,6 +15,7 @@ import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save';
 import { AppBar, Toolbar, CssBaseline } from '@material-ui/core';
 import LinearProgress from '@material-ui/core/LinearProgress';
+import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,7 +40,6 @@ export default function CenteredGrid() {
   const myHome = "6205 Section RD5 Gazama Street Mamelodi"
   const mylang = "exampleweb.co.za"
   const myEmail = "thulaninhlapo2@gmail.com"
-  
 
   return (
     
@@ -125,4 +126,5 @@ export default function CenteredGrid() {
       </Grid>
     </div>
   );
+   
 }
