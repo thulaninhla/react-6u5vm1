@@ -13,14 +13,18 @@ import MovieSharpIcon from '@material-ui/icons/MovieSharp';
 import SportsSoccerSharpIcon from '@material-ui/icons/SportsSoccerSharp';
 import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save';
-import { AppBar, Toolbar, CssBaseline } from '@material-ui/core';
+import { AppBar, Toolbar, CssBaseline, CardMedia } from '@material-ui/core';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Box from '@material-ui/core/Box';
+import Avatar from '@material-ui/core/Avatar';
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    '& > *': {
+      margin: theme.spacing(1),
+    },
   },
 
   media: {
@@ -61,8 +65,16 @@ export default function CenteredGrid() {
       <AppBar position="relative">
       <Toolbar>
       <ButtonBase className={classes.image}>
-              <img className={classes.img} alt="facebook" src="https://web.facebook.com/photo.php?fbid=168774159845780&set=t.100001395910019&type=3"/>
+              <Avatar alt="" src=" url: https://web.facebook.com/photo.php?fbid=168774159845780&set=t.100001395910019&type=3" />
+      
+      <CardMedia
+      className={classes.media}
+      image="https://web.facebook.com/photo.php?fbid=168774159845780&set=t.100001395910019&type=3"
+      title="Thulani"
+      />
+
             </ButtonBase>
+
       <Typography variant="h5" align="center">{myName}</Typography>
       </Toolbar>
       </AppBar>
