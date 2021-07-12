@@ -50,23 +50,22 @@ export default function CenteredGrid() {
   const myDesc = "IT Graduate"
   const myPhone = "0724389800"
   const myHome = "6205 Section RD5 Gazama Street Mamelodi"
-  const mylang = "exampleweb.co.za"
   const myEmail = "thulaninhlapo2@gmail.com"
 
   return (
     
     <div className={classes.root}>
-      <>
+      
       <CssBaseline />
       <AppBar position="relative">
       <Toolbar>
       <ButtonBase className={classes.image}>
-              <img className={classes.img} alt="complex" src="https://photos.google.com/search/_tra_/photo/AF1QipNAq5ocfXDxhLIpHEIONIfKGtI7R5FntCtzQmLe"/>
+              <img className={classes.img} alt="" src="https://web.facebook.com/photo.php?fbid=168774159845780&set=t.100001395910019&type=3"/>
             </ButtonBase>
-      <Typography variant="h5">{myName}</Typography>
+      <Typography variant="h5" align="center">{myName}</Typography>
       </Toolbar>
       </AppBar>
-        </>
+        
       <Grid container spacing={}>
         <Grid item xs={12} >
           <Paper className={classes.paper} elevation="0">
@@ -78,7 +77,7 @@ export default function CenteredGrid() {
         <Grid item xs={6}>
       
           <Paper className={classes.paper} elevation="0">
-            <Typography variant="h6" color="primary">Contact</Typography>
+            <Typography variant="h6" color="primary" >Contact</Typography>
             <Typography variant="Body1"><EmailIcon color="primary" fontSize="small"></EmailIcon>
             </Typography>
             <Typography>{myEmail}</Typography>
