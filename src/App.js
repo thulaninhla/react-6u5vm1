@@ -55,7 +55,6 @@ export default function CenteredGrid() {
   const myEmail = "thulaninhlapo2@gmail.com"
 
   return (
-   
     <div className={classes.root}>
       <>
       <CssBaseline />
