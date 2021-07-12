@@ -15,6 +15,8 @@ import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save';
 import { AppBar, Toolbar, CssBaseline } from '@material-ui/core';
 import ButtonBase from '@material-ui/core/ButtonBase';
+import Box from '@material-ui/core/Box';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,19 +55,19 @@ export default function CenteredGrid() {
   const myEmail = "thulaninhlapo2@gmail.com"
 
   return (
-    
+   
     <div className={classes.root}>
-      
+      <>
       <CssBaseline />
       <AppBar position="relative">
       <Toolbar>
       <ButtonBase className={classes.image}>
-              <img className={classes.img} alt="" src="https://web.facebook.com/photo.php?fbid=168774159845780&set=t.100001395910019&type=3"/>
+              <img className={classes.img} alt="facebook" src="https://web.facebook.com/photo.php?fbid=168774159845780&set=t.100001395910019&type=3"/>
             </ButtonBase>
       <Typography variant="h5" align="center">{myName}</Typography>
       </Toolbar>
       </AppBar>
-        
+        </>
       <Grid container spacing={}>
         <Grid item xs={12} >
           <Paper className={classes.paper} elevation="0">
