@@ -17,6 +17,7 @@ import { AppBar, Toolbar, CssBaseline, CardMedia } from '@material-ui/core';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Box from '@material-ui/core/Box';
 import Avatar from '@material-ui/core/Avatar';
+import image from 'react-native';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -69,7 +70,7 @@ export default function CenteredGrid() {
       
       <CardMedia
       className={classes.media}
-      image="https://web.facebook.com/photo.php?fbid=168774159845780&set=t.100001395910019&type=3"
+      image=" https://graph.facebook.com/me?access_token=${token}&fields=id,name,picture.type(large)"
       title="Thulani"
       />
 
