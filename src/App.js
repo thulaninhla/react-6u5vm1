@@ -204,7 +204,7 @@ export default function CenteredGrid() {
         <Grid item xs={6}>
           <Paper className={classes.paper} elevation="0">
             <Typography variant="h6" color="secondary">Profile</Typography>
-            <Typography variant="h8" align="center" paragraph>
+            <Typography variant="h8" align="left" paragraph>
             I believe I am the right candidate for this poertunity as i have the skill set to meet the company's objective in terms of the development of back-end and front-end of web-based, desktop and mobile applications in PHP, Visual Basic. Html, CSS, JAVA, and the set of database managment system. By joining the team, i will be able to learn new skills in the world of Technology and get work-related experience.
             </Typography>
 
