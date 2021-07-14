@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
-import HomeIcon from '@material-ui/icons/Home';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MusicNoteSharpIcon from '@material-ui/icons/MusicNoteSharp';
 import BookSharpIcon from '@material-ui/icons/BookSharp';
 import MovieSharpIcon from '@material-ui/icons/MovieSharp';
@@ -18,16 +18,19 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import Box from '@material-ui/core/Box';
 import Avatar from '@material-ui/core/Avatar';
 import image from 'react-native';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
 
 const useStyles = makeStyles((theme) => ({
+  
   root: {
     flexGrow: 1,
     '& > *': {
       margin: theme.spacing(1),
     },
   },
-
+ 
   media: {
     height: 140,
   },
@@ -56,82 +59,162 @@ export default function CenteredGrid() {
   const myName = "Thulani Nhlapo "
   const myDesc = "IT Graduate"
   const myPhone = "0724389800"
-  const myHome = "6205 Section RD5 Gazama Street Mamelodi"
+  const myLinked = "www.linkedin.com/in/thulani-nhlapo-80783396"
   const myEmail = "thulaninhlapo2@gmail.com"
+  const myLoca = "6205 Section R Mamelodi"
 
   return (
     <div className={classes.root}>
-      <>
-      <CssBaseline />
-      <AppBar position="relative">
-      <Toolbar>
-      <ButtonBase className={classes.image}>
-              <Avatar alt="" src=" url: https://web.facebook.com/photo.php?fbid=168774159845780&set=t.100001395910019&type=3" />
       
-      <CardMedia
-      className={classes.media}
-      image=" https://graph.facebook.com/me?access_token=${token}&fields=id,name,picture.type(large)"
-      title="Thulani"
-      />
-
-            </ButtonBase>
-
-      <Typography variant="h5" align="center">{myName}</Typography>
+      <AppBar position="Static">
+        <Toolbar>
+      <Typography variant="h5" color="secondary" align="center" >{myName}</Typography>
       </Toolbar>
       </AppBar>
-        </>
+      
       <Grid container spacing={}>
         <Grid item xs={12} >
           <Paper className={classes.paper} elevation="0">
             
-      <Typography variant="h5" color="primary">{myDesc}</Typography>
+      <Typography variant="h5" color="secondary">{myDesc}</Typography>
           </Paper>
         </Grid>
       
         <Grid item xs={6}>
       
           <Paper className={classes.paper} elevation="0">
-            <Typography variant="h6" color="primary" >Contact</Typography>
-            <Typography variant="Body1"><EmailIcon color="primary" fontSize="small"></EmailIcon>
-            </Typography>
-            <Typography>{myEmail}</Typography>
-            <Typography variant="h6"></Typography>
-            <Typography variant="body1"><PhoneIcon color="primary" fontSize="small"></PhoneIcon>
-            </Typography>
-            <Typography>{myPhone}</Typography>
-            <Typography variant="h6"></Typography>
-            <Typography variant="h4"><HomeIcon color="primary" fontSize="small"></HomeIcon>
-            </Typography>
-            <Typography variant="body1">{myHome}</Typography>
+            <Typography variant="h6" color="secondary"    align="left">Contact</Typography>
+            
+            <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+             <PhoneIcon fontSize="large" style={{
+               width: ''
+             }}/>
+             <span style={{
+               width: ''
+             }}>{myPhone}</span>
+             </div>
 
-            <Typography variant="h6" color="primary">Skill</Typography>
-            <Typography variant="body1">Html & CSS</Typography>
-            <Typography variant="body1">PHP</Typography>
-            <Typography variant="body1">MySQL</Typography>
-            <Typography variant="body1">Visual Basic</Typography>
+            <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+             <EmailIcon fontSize="large"/>
+             <span>{myEmail}</span>
+             </div>
+            
+             <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+             <LinkedInIcon fontSize="large"/>
+             <span>{myLinked}</span>
+             </div>
 
-            <Typography variant="h6" color="primary">languages</Typography>
-            <Typography variant="body1">English</Typography>
-            <Typography variant="body1">IsiZulu</Typography>
-            <Typography variant="body1">Afrikaans</Typography>
-            <Typography variant="body1">Setswana</Typography>
-            <Typography variant="body1">N. Sotho</Typography>
+             <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+             <LocationOnIcon fontSize="large"/>
+             <span>{myLoca}</span>
+             </div>
 
-            <Typography variant="h6" color="primary">Hobbies</Typography>
-            <MusicNoteSharpIcon color="primary" fontSize="small"></MusicNoteSharpIcon>
-            <BookSharpIcon color="primary" fontSize="small"></BookSharpIcon><MovieSharpIcon color="primary" fontSize="small"></MovieSharpIcon><SportsSoccerSharpIcon color="primary" fontSize="small"></SportsSoccerSharpIcon>
+            <Typography variant="h6" color="secondary" align="left">Skill</Typography>
+            
+            <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+            <FiberManualRecordIcon /><span>Html & CSS</span>
+            </div>
+            <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+            <FiberManualRecordIcon /><span>PHP</span>
+            </div>
+            <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+            <FiberManualRecordIcon /><span>MySQL</span>
+            </div>
+            <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+            <FiberManualRecordIcon /><span>Microsoft Office 365</span>
+            </div>
+            <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+            <FiberManualRecordIcon /><span>Visual Basic</span>
+            </div>
+
+            <Typography variant="h6" color="secondary" align="left">Reference</Typography>
+            <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+              <span><b>Mrs. Dipuo Sebidi</b></span>
+              </div>
+              <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+              <span><b>Designation: Manager</b></span>
+              </div>
+              <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+              <span><b>Company Name: EPWP</b></span>
+              </div><br />
+              <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+              <span><b>Mrs. Nancy Munyangane</b></span>
+              </div>
+              <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+              <span><b>Designation: Supervior</b></span>
+              </div>
+              <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+              <span><b>Company Name: South African Statistics</b></span>
+              </div>
 
           </Paper>
         </Grid>
         <Grid item xs={6}>
           <Paper className={classes.paper} elevation="0">
-            <Typography variant="h6" color="primary">About Me</Typography>
-            <Typography variant="body1" align="center" paragraph>
-            I believe and hope that my field of study in Information Technology will make me an asset to your organization and I would appreciate your careful consideration of my credentials as presented in this CV. I believe I am the right candidate for this opportunity as I have the skill set to meet the company’s objectives in terms of the development of back-end and front-end of Web-based, Desktop and Android Applications in PHP (Web-based), Visual Basic.NET (Desktop), HTML, CSS, JAVA (Android) programing languages, and the set of databases to communicate with application using database software like Oracle Relational Database Management System, Microsoft Access, and MySQL. By joining the academy, I will be able to learn new skills in the world of technology and get work-related experience. 
+            <Typography variant="h6" color="secondary">Profile</Typography>
+            <Typography variant="h8" align="center" paragraph>
+            
             </Typography>
-            <Typography variant="h6" color="primary">Education</Typography>
-            <Typography variant="body1" align="">2021: Diploma in Information Technology </Typography>
-            <Typography variant="body1" align="">2008: Grade 12 </Typography>
 
             <Typography variant="h6" color="primary">Work experience</Typography>
             <Typography variant="body1" align="">01 August 2018 – 31 August 2019 Company : Expanded Public Works Programme
@@ -140,6 +223,10 @@ export default function CenteredGrid() {
             <Typography variant="body1" align="">05 April 2016 – 10 November 2016 Company : South African Statistics
             Position Held : Field Worker
             Duties : Community Surveying</Typography>
+
+            <Typography variant="h6" color="primary">Education</Typography>
+            <Typography variant="body1" align="">2021: Diploma in Information Technology </Typography>
+            <Typography variant="body1" align="">2008: Grade 12 </Typography>
 
           </Paper>
         </Grid>
