@@ -9,7 +9,8 @@ import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save';
-import { AppBar, Toolbar, CssBaseline, CardMedia } from '@material-ui/core';
+import { AppBar, Toolbar } from '@material-ui/core';
+import CopyrightIcon from '@material-ui/icons/Copyright';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
@@ -76,7 +77,7 @@ export default function CenteredGrid() {
       
           <Paper className={classes.paper} elevation="0">
             <Typography variant="h6" color="secondary"    align="left">Contact</Typography>
-            
+            <br />
             <div style={{
               display: 'flex',
               align: 'center',
@@ -89,7 +90,7 @@ export default function CenteredGrid() {
                width: ''
              }}>{myPhone}</span>
              </div>
-
+            
             <div style={{
               display: 'flex',
               align: 'center',
@@ -116,9 +117,9 @@ export default function CenteredGrid() {
              <LocationOnIcon fontSize="large"/>
              <span>{myLoca}</span>
              </div>
-
+              <br />
             <Typography variant="h6" color="secondary" align="left">Skill</Typography>
-            
+            <br />
             <div style={{
               display: 'flex',
               align: 'center',
@@ -154,8 +155,8 @@ export default function CenteredGrid() {
             }}>
             <FiberManualRecordIcon /><span>Visual Basic</span>
             </div>
-
-            <Typography variant="h6" color="secondary" align="left">Reference</Typography>
+            <br />
+            <Typography variant="h6" color="secondary" align="left">Reference</Typography><br />
             <div style={{
               display: 'flex',
               align: 'center',
@@ -203,30 +204,82 @@ export default function CenteredGrid() {
         </Grid>
         <Grid item xs={6}>
           <Paper className={classes.paper} elevation="0">
-            <Typography variant="h6" color="secondary">Profile</Typography>
+            <Typography variant="h6" color="secondary" align="left">Profile</Typography><br />
             <Typography variant="h8" align="left" paragraph>
             I believe I am the right candidate for this poertunity as i have the skill set to meet the company's objective in terms of the development of back-end and front-end of web-based, desktop and mobile applications in PHP, Visual Basic. Html, CSS, JAVA, and the set of database managment system. By joining the team, i will be able to learn new skills in the world of Technology and get work-related experience.
             </Typography>
 
-            <Typography variant="h6" color="primary">Work experience</Typography>
-            <Typography variant="body1" align="">01 August 2018 – 31 August 2019 Company : Expanded Public Works Programme
-            Position Held : General Worker
-            Duties : Cleaning & Culinary work</Typography>
-            <Typography variant="body1" align="">05 April 2016 – 10 November 2016 Company : South African Statistics
-            Position Held : Field Worker
-            Duties : Community Surveying</Typography>
+            <Typography variant="h6" color="secondary" align="left">Work experience</Typography>
+            <br />
+              
+              <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+              <span><b>Expanded Public Works Programme</b></span>
+              </div>
+              <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+              <span>2018 - 2019: General Worker</span>
+              <span></span><br />
+              </div>
+              <br/ >
+              <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+              <span><b>South African Statistics</b></span>
+              </div>
+              <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+              <span>2016 - 2017: Field Worker</span>
+              <span></span>
+              </div>
+              <br />
+            <Typography variant="h6" color="secondary" align="left">Education</Typography><br />
 
-            <Typography variant="h6" color="primary">Education</Typography>
-            <Typography variant="body1" align="">2021: Diploma in Information Technology </Typography>
-            <Typography variant="body1" align="">2008: Grade 12 </Typography>
+              <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+              <span><b>UNISA: Diploma in Iformation Technology</b></span>
+              </div>
+              <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+              <span>2016 - 2021</span>
+              </div>
+              <br/ >
+              <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+              <span><b>Jafta Mahlangu H.S: National Senior Certificate</b></span>
+              </div>
+              <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+            }}>
+              <span>2004 - 2008</span>
+              </div>
 
           </Paper>
         </Grid>
         <Grid item xs={12}>
           <Paper className={classes.paper} elevation="0">
-            <Button variant="contained" color="primary" size="large"
-             startIcon={<SaveIcon />}>
-              Save</Button>
            
           </Paper>
         </Grid>
