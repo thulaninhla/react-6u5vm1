@@ -7,17 +7,9 @@ import Typography from '@material-ui/core/Typography';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import MusicNoteSharpIcon from '@material-ui/icons/MusicNoteSharp';
-import BookSharpIcon from '@material-ui/icons/BookSharp';
-import MovieSharpIcon from '@material-ui/icons/MovieSharp';
-import SportsSoccerSharpIcon from '@material-ui/icons/SportsSoccerSharp';
 import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save';
 import { AppBar, Toolbar, CssBaseline, CardMedia } from '@material-ui/core';
-import ButtonBase from '@material-ui/core/ButtonBase';
-import Box from '@material-ui/core/Box';
-import Avatar from '@material-ui/core/Avatar';
-import image from 'react-native';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 
@@ -213,7 +205,7 @@ export default function CenteredGrid() {
           <Paper className={classes.paper} elevation="0">
             <Typography variant="h6" color="secondary">Profile</Typography>
             <Typography variant="h8" align="center" paragraph>
-            
+            I believe I am the right candidate for this poertunity as i have the skill set to meet the company's objective in terms of the development of back-end and front-end of web-based, desktop and mobile applications in PHP, Visual Basic. Html, CSS, JAVA, and the set of database managment system. By joining the team, i will be able to learn new skills in the world of Technology and get work-related experience.
             </Typography>
 
             <Typography variant="h6" color="primary">Work experience</Typography>
