@@ -169,7 +169,7 @@ export default function CenteredGrid() {
             </div>
             <br />
             </Grid>
-            <Grid style={{    height:'220px' ,borderBottom:"solid", borderColor:"	#808000 ", borderWidth:'2px' }}  >
+            <Grid style={{    height:'220px' ,borderTop:"solid", borderColor:"	#808000 ", borderWidth:'2px' }}  >
             <Typography style={{ marginTop:'15px', color:"#808000"}} variant="h6" color="secondary" align="left">Reference</Typography><br />
             <div style={{
               display: 'flex',
