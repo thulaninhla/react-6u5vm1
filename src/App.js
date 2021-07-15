@@ -49,7 +49,7 @@ export default function CenteredGrid() {
   const myLoca = "6205 Section R Mamelodi"
 
   return (
-    <body backgroundColor="	#808080" >
+   
     <div className={classes.root}>
     
       <AppBar style={{backgroundColor:"#37474f"}} position="Static">
@@ -299,6 +299,6 @@ export default function CenteredGrid() {
        
       </Grid>
     </div>
-    </body>
+   
   );
 }
