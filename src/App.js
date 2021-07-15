@@ -61,7 +61,7 @@ export default function CenteredGrid() {
       
       <AppBar style={{backgroundColor:"#37474f"}} position="Static">
         <Toolbar>
-      <Typography variant="h5" color="#37474f"  style={{textAlign:"center", marginLeft:'500px', color:"#ffd740"}}><h1>Thulani Nhlapo </h1><p>IT Graduate</p></Typography>
+      <Typography variant="h5" color="#37474f" style={{textAlign:"center", marginLeft:'500px', color:"#ffd740"}}><h3>Thulani <b>Nhlapo</b> </h3><p>IT Graduate</p></Typography>
       </Toolbar>
       </AppBar>
       
