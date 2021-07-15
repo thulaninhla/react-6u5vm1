@@ -61,7 +61,7 @@ export default function CenteredGrid() {
       
       <AppBar style={{backgroundColor:"#37474f"}} position="Static">
         <Toolbar>
-      <Typography variant="h5" color="#37474f" style={{textAlign:"center", marginLeft:'500px', color:"#ffd740"}}><h3>Thulani <b>Nhlapo</b> </h3><p>IT Graduate</p></Typography>
+      <Typography variant="h5" color="#37474f"  style={{textAlign:"center", marginLeft:'500px', color:"#ffd740"}}><h3>Thulani Nhlapo </h3><p>IT Graduate</p></Typography>
       </Toolbar>
       </AppBar>
       
@@ -71,13 +71,15 @@ export default function CenteredGrid() {
         <Grid item xs={5}>
       
           <Paper style={{}} className={classes.paper} elevation="0">
-            <Typography style={{ color:"#ffd740"}}variant="h6" color="secondary"    align="left">Contact</Typography>
+
+          <Grid style={{    height:'275px' ,borderBottom:"solid", borderColor:"#ffd740 ", borderWidth:'2px' }}  >
+            <Typography style={{margin:'15px', color:"#ffd740"}}variant="h6" color="secondary"    align="left">Contact</Typography>
             <br />
             <div style={{
               display: 'flex',
               align: 'center',
               flexWrap: 'wrap',
-
+              marginTop:'15px', 
              
             }}>
              <PhoneIcon fontSize="large" style={{
@@ -92,6 +94,7 @@ export default function CenteredGrid() {
               display: 'flex',
               align: 'center',
               flexWrap: 'wrap',
+              marginTop:'15px', 
             }}>
              <EmailIcon fontSize="large"/>
              <span>{myEmail}</span>
@@ -101,6 +104,7 @@ export default function CenteredGrid() {
               display: 'flex',
               align: 'center',
               flexWrap: 'wrap',
+              marginTop:'15px', 
             }}>
              <LinkedInIcon fontSize="large"/>
              <span>{myLinked}</span>
@@ -110,18 +114,23 @@ export default function CenteredGrid() {
               display: 'flex',
               align: 'center',
               flexWrap: 'wrap',
-              borderBottom:"solid", borderColor:"#ffd740 ", borderWidth:'2px' 
+              marginTop:'15px', 
+             
             }}>
              <LocationOnIcon fontSize="large"/>
              <span>{myLoca}</span>
              </div>
               <br />
-            <Typography style={{ color:"#ffd740"}} variant="h6"  align="left">Skills</Typography>
+              </Grid>
+
+              <Grid style={{    height:'270px' ,borderBottom:"solid", borderColor:"#ffd740 ", borderWidth:'2px' }}  >
+            <Typography style={{marginTop:'15px', color:"#ffd740"}} variant="h6"  align="left">Skills</Typography>
             <br />
             <div style={{
               display: 'flex',
               align: 'center',
               flexWrap: 'wrap',
+              marginTop:'15px', 
             }}>
             <FiberManualRecordIcon /><span>Html & CSS</span>
             </div>
@@ -129,6 +138,15 @@ export default function CenteredGrid() {
               display: 'flex',
               align: 'center',
               flexWrap: 'wrap',
+              marginTop:'15px', 
+            }}>
+            <FiberManualRecordIcon /><span>PHP</span>
+            </div>
+            <div style={{
+              display: 'flex',
+              align: 'center',
+              flexWrap: 'wrap',
+              marginTop:'15px', 
             }}>
             <FiberManualRecordIcon /><span>MySQL</span>
             </div>
@@ -136,6 +154,7 @@ export default function CenteredGrid() {
               display: 'flex',
               align: 'center',
               flexWrap: 'wrap',
+              marginTop:'15px', 
             }}>
             <FiberManualRecordIcon /><span>Microsoft Office 365</span>
             </div>
@@ -143,12 +162,15 @@ export default function CenteredGrid() {
               display: 'flex',
               align: 'center',
               flexWrap: 'wrap',
-              borderBottom:"solid", borderColor:"#ffd740", borderWidth:'2px' 
+              marginTop:'15px', 
+            
             }}>
             <FiberManualRecordIcon /><span>Visual Basic</span>
             </div>
             <br />
-            <Typography style={{ color:"#ffd740"}} variant="h6" color="secondary" align="left">Reference</Typography><br />
+            </Grid>
+            <Grid style={{    height:'220px' ,borderBottom:"solid", borderColor:"#ffd740 ", borderWidth:'2px' }}  >
+            <Typography style={{ marginTop:'15px', color:"#ffd740"}} variant="h6" color="secondary" align="left">Reference</Typography><br />
             <div style={{
               display: 'flex',
               align: 'center',
@@ -188,21 +210,23 @@ export default function CenteredGrid() {
               display: 'flex',
               align: 'center',
               flexWrap: 'wrap',
-              borderBottom:"solid", borderColor:"#ffd740 ", borderWidth:'2px' 
+              
             }}>
               <span><b>Company Name: South African Statistics</b></span>
               </div>
-
+</Grid>
           </Paper>
         </Grid>
         <Grid  style={{ borderLeft:"solid", borderColor:" #ffd740 ", borderWidth:'4px', marginTop:'15px'  }} item xs={6}>
           <Paper className={classes.paper} elevation="0">
-            <Typography style={{  color:"#ffd740"}} variant="h6" color="secondary" align="left">Profile</Typography><br />
+          <Grid style={{    height:'275px' ,borderBottom:"solid", borderColor:"#ffd740 ", borderWidth:'2px' }}  >
+            <Typography style={{ marginTop:'15px',  color:"#ffd740"}} variant="h6" color="secondary" align="left">Profile</Typography><br />
             <Typography variant="h8" align="left" paragraph>
             I believe I am the right candidate for this poertunity as i have the skill set to meet the company's objective in terms of the development of back-end and front-end of web-based, desktop and mobile applications in PHP, Visual Basic. Html, CSS, JAVA, and the set of database managment system. By joining the team, i will be able to learn new skills in the world of Technology and get work-related experience.
             </Typography>
-
-            <Typography variant="h6" style={{  borderTop:"solid", borderColor:"#ffd740 ", borderWidth:'2px', color:"#ffd740"}} align="left">Work experience</Typography>
+</Grid>
+<Grid style={{    height:'220px' ,borderBottom:"solid", borderColor:"#ffd740 ", borderWidth:'2px' }}  >
+            <Typography variant="h6" style={{  marginTop:'15px', color:"#ffd740"}} align="left">Work experience</Typography>
             <br />
               
               <div style={{
@@ -236,8 +260,10 @@ export default function CenteredGrid() {
               <span>2016 - 2017: Field Worker</span>
               <span></span>
               </div>
-              <br />
-            <Typography variant="h6" style={{ borderTop:"solid", borderColor:"#ffd740", borderWidth:'2px',color:"#ffd740"}} align="left">Education</Typography><br />
+              <br /></Grid>
+
+              <Grid style={{    height:'220px' ,borderBottom:"solid", borderColor:"#ffd740 ", borderWidth:'2px' }}  >
+            <Typography variant="h6" style={{ marginTop:'15px', color:"#ffd740"}} align="left">Education</Typography><br />
 
               <div style={{
               display: 'flex',
@@ -268,14 +294,10 @@ export default function CenteredGrid() {
             }}>
               <span>2004 - 2008</span>
               </div>
-
+</Grid>
           </Paper>
         </Grid>
-        <Grid item xs={12}>
-          <Paper className={classes.paper} elevation="0">
-           
-          </Paper>
-        </Grid>
+       
       </Grid>
     </div>
   );
