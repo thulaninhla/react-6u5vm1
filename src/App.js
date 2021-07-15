@@ -59,29 +59,26 @@ export default function CenteredGrid() {
   return (
     <div className={classes.root}>
       
-      <AppBar position="Static">
+      <AppBar style={{backgroundColor:"#37474f"}} position="Static">
         <Toolbar>
-      <Typography variant="h5" color="secondary" align="center" >{myName}</Typography>
+      <Typography variant="h5" color="#37474f"  style={{textAlign:"center", marginLeft:'500px', color:"#ffd740"}}><h1>Thulani Nhlapo </h1><p>IT Graduate</p></Typography>
       </Toolbar>
       </AppBar>
       
       <Grid container spacing={}>
-        <Grid item xs={12} >
-          <Paper className={classes.paper} elevation="0">
-            
-      <Typography variant="h5" color="secondary">{myDesc}</Typography>
-          </Paper>
-        </Grid>
+       
       
-        <Grid item xs={6}>
+        <Grid item xs={5}>
       
-          <Paper className={classes.paper} elevation="0">
-            <Typography variant="h6" color="secondary"    align="left">Contact</Typography>
+          <Paper style={{}} className={classes.paper} elevation="0">
+            <Typography style={{ color:"#ffd740"}}variant="h6" color="secondary"    align="left">Contact</Typography>
             <br />
             <div style={{
               display: 'flex',
               align: 'center',
               flexWrap: 'wrap',
+
+             
             }}>
              <PhoneIcon fontSize="large" style={{
                width: ''
@@ -113,12 +110,13 @@ export default function CenteredGrid() {
               display: 'flex',
               align: 'center',
               flexWrap: 'wrap',
+              borderBottom:"solid", borderColor:"#ffd740 ", borderWidth:'2px' 
             }}>
              <LocationOnIcon fontSize="large"/>
              <span>{myLoca}</span>
              </div>
               <br />
-            <Typography variant="h6" color="secondary" align="left">Skill</Typography>
+            <Typography style={{ color:"#ffd740"}} variant="h6"  align="left">Skills</Typography>
             <br />
             <div style={{
               display: 'flex',
@@ -126,13 +124,6 @@ export default function CenteredGrid() {
               flexWrap: 'wrap',
             }}>
             <FiberManualRecordIcon /><span>Html & CSS</span>
-            </div>
-            <div style={{
-              display: 'flex',
-              align: 'center',
-              flexWrap: 'wrap',
-            }}>
-            <FiberManualRecordIcon /><span>PHP</span>
             </div>
             <div style={{
               display: 'flex',
@@ -152,11 +143,12 @@ export default function CenteredGrid() {
               display: 'flex',
               align: 'center',
               flexWrap: 'wrap',
+              borderBottom:"solid", borderColor:"#ffd740", borderWidth:'2px' 
             }}>
             <FiberManualRecordIcon /><span>Visual Basic</span>
             </div>
             <br />
-            <Typography variant="h6" color="secondary" align="left">Reference</Typography><br />
+            <Typography style={{ color:"#ffd740"}} variant="h6" color="secondary" align="left">Reference</Typography><br />
             <div style={{
               display: 'flex',
               align: 'center',
@@ -196,20 +188,21 @@ export default function CenteredGrid() {
               display: 'flex',
               align: 'center',
               flexWrap: 'wrap',
+              borderBottom:"solid", borderColor:"#ffd740 ", borderWidth:'2px' 
             }}>
               <span><b>Company Name: South African Statistics</b></span>
               </div>
 
           </Paper>
         </Grid>
-        <Grid item xs={6}>
+        <Grid  style={{ borderLeft:"solid", borderColor:" #ffd740 ", borderWidth:'4px', marginTop:'15px'  }} item xs={6}>
           <Paper className={classes.paper} elevation="0">
-            <Typography variant="h6" color="secondary" align="left">Profile</Typography><br />
+            <Typography style={{  color:"#ffd740"}} variant="h6" color="secondary" align="left">Profile</Typography><br />
             <Typography variant="h8" align="left" paragraph>
             I believe I am the right candidate for this poertunity as i have the skill set to meet the company's objective in terms of the development of back-end and front-end of web-based, desktop and mobile applications in PHP, Visual Basic. Html, CSS, JAVA, and the set of database managment system. By joining the team, i will be able to learn new skills in the world of Technology and get work-related experience.
             </Typography>
 
-            <Typography variant="h6" color="secondary" align="left">Work experience</Typography>
+            <Typography variant="h6" style={{  borderTop:"solid", borderColor:"#ffd740 ", borderWidth:'2px', color:"#ffd740"}} align="left">Work experience</Typography>
             <br />
               
               <div style={{
@@ -244,7 +237,7 @@ export default function CenteredGrid() {
               <span></span>
               </div>
               <br />
-            <Typography variant="h6" color="secondary" align="left">Education</Typography><br />
+            <Typography variant="h6" style={{ borderTop:"solid", borderColor:"#ffd740", borderWidth:'2px',color:"#ffd740"}} align="left">Education</Typography><br />
 
               <div style={{
               display: 'flex',
@@ -286,5 +279,4 @@ export default function CenteredGrid() {
       </Grid>
     </div>
   );
-} 
-
+}
