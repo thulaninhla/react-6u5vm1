@@ -222,13 +222,13 @@ export default function CenteredGrid() {
           
             <Typography style={{ marginBottom:'15px',  color:	"#808000"}} variant="h6" color="secondary" align="left">Profile</Typography>
             <Typography variant="h8" align="left" paragraph>
-            <Grid style={{    height:'120px' ,borderTop:"solid", borderColor:"#808000", borderWidth:'2px' }}  ><br />
+            <Grid style={{    height:'200px' ,borderTop:"solid", borderColor:"#808000", borderWidth:'2px' }}  ><br />
             I believe I am the right candidate for this poertunity as i have the skill set to meet the company's objective in terms of the development of back-end and front-end of web-based, desktop and mobile applications in PHP, Visual Basic. Html, CSS, JAVA, and the set of database managment system. By joining the team, i will be able to learn new skills in the world of Technology and get work-related experience.
             </Grid>
             </Typography>
             
             <Typography variant="h6" style={{  marginBottom:'15px', color:"	#808000"}} align="left">Work experience</Typography>
-            <Grid style={{    height:'120px' ,borderTop:"solid", borderColor:"#808000", borderWidth:'2px' }}  ><br />
+            <Grid style={{    height:'200px' ,borderTop:"solid", borderColor:"#808000", borderWidth:'2px' }}  ><br />
               
               <div style={{
               display: 'flex',
