@@ -54,7 +54,7 @@ export default function CenteredGrid() {
       <AppBar style={{backgroundColor:"#37474f"}} position="Static">
         <Toolbar>
         <Avatar style={{ height: "200px", width: "200px" }}>
-          <img src="https://web.facebook.com/photo.php?fbid=3988933607829797&set=pb.100001395910019.-2207520000..&type=3" name="My image" />
+          <img src="/me.jpg" name="My image" />
         </Avatar>
       <Typography variant="h5" color="#37474f"  style={{textAlign:"center", marginLeft:'350px', color:"	#808000"}}><h3>Thulani Nhlapo </h3><p>IT Graduate</p></Typography>
     
