@@ -13,6 +13,7 @@ import { AppBar, Toolbar } from '@material-ui/core';
 import CopyrightIcon from '@material-ui/icons/Copyright';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
+import Avatar from '@material-ui/core/Avatar';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -34,16 +35,7 @@ const useStyles = makeStyles((theme) => ({
   container: {
     backgroundColor: theme.palette.backgroundColor
   }, 
-  image: {
-    width: 128,
-    height: 128,
-  },
-  img: {
-    margin: 'auto',
-    display: 'block',
-    maxWidth: '100%',
-    maxHeight: '100%',
-  }
+  
   },
 }));
 
@@ -58,10 +50,14 @@ export default function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-      
+    
       <AppBar style={{backgroundColor:"#37474f"}} position="Static">
         <Toolbar>
-      <Typography variant="h5" color="#37474f"  style={{textAlign:"center", marginLeft:'500px', color:"	#808000"}}><h3>Thulani Nhlapo </h3><p>IT Graduate</p></Typography>
+        <Avatar style={{ height: "200px", width: "200px" }}>
+          <img src="https://web.facebook.com/photo.php?fbid=3988933607829797&set=pb.100001395910019.-2207520000..&type=3" name="My image" />
+        </Avatar>
+      <Typography variant="h5" color="#37474f"  style={{textAlign:"center", marginLeft:'350px', color:"	#808000"}}><h3>Thulani Nhlapo </h3><p>IT Graduate</p></Typography>
+    
       </Toolbar>
       </AppBar>
       
@@ -169,7 +165,7 @@ export default function CenteredGrid() {
             </div>
             <br />
             </Grid>
-            <Grid style={{    height:'220px' ,borderTop:"solid", borderColor:"	#808000 ", borderWidth:'2px' }}  >
+            <Grid style={{    height:'220px' ,borderTop:"solid", borderColor:"	#808000 ", borderWidth:'0px' }}  >
             <Typography style={{ marginTop:'15px', color:"#808000"}} variant="h6" color="secondary" align="left">Reference</Typography><br />
             <div style={{
               display: 'flex',
