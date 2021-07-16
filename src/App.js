@@ -44,7 +44,7 @@ export default function CenteredGrid() {
   const myName = "Thulani Nhlapo "
   const myDesc = "IT Graduate"
   const myPhone = "0724389800"
-  const myLinked = "www.linkedin.com/in/thulani-nhlapo-80783396"
+  const myLinked = "linkedin.com/in/thulani-nhlapo-80783396"
   const myEmail = "thulaninhlapo2@gmail.com"
   const myLoca = "6205 Section R Mamelodi"
 
@@ -58,7 +58,7 @@ export default function CenteredGrid() {
           <img height="180px" width="180px" src="https://scontent.fjnb9-1.fna.fbcdn.net/v/t1.6435-9/c0.0.860.860a/s851x315/217837506_4343475239042297_6342682972450939567_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=da31f3&_nc_eui2=AeE0s27U2_zzAAOGlrO9robGtZK17mZ8Sgm1krXuZnxKCdDdp7PBerWTjAbqbf0T3cuOBMuFxSBQr6MvGRIvSgOk&_nc_ohc=LwZ9lLOkVgQAX-_wDV9&tn=7h8J9PpG38TE1XTO&_nc_ht=scontent.fjnb9-1.fna&oh=f638fc0b6c52131c0e510ea4b47aeb47&oe=60F603EE
           " name="My image" />
         </Avatar>
-      <Typography variant="h5" color="#37474f"  style={{textAlign:"center", marginLeft:'350px', color:"	#808000"}}><h3>Thulani Nhlapo </h3><p>IT Graduate</p></Typography>
+      <Typography variant="h5" color="#37474f"  style={{textAlign:"center", marginLeft:'210px', color:"	#808000"}}><h3>Thulani Nhlapo </h3><p>IT Graduate</p></Typography>
     
       </Toolbar>
       </AppBar>
